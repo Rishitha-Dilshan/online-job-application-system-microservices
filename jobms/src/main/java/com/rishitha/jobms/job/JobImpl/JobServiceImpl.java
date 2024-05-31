@@ -2,17 +2,17 @@ package com.rishitha.jobms.job.JobImpl;
 
 
 import com.rishitha.jobms.job.Job;
-import com.rishitha.jobms.job.dto.JobWithCompanyDTO;
+import com.rishitha.jobms.job.dto.JobDTO;
 
 import java.util.List;
 
 
 public interface JobServiceImpl {
-    List<JobWithCompanyDTO> findAll();
+    List<JobDTO> findAll();
 
     void createJob(Job job);
 
-    Job getJobById(Long id);
+    JobDTO getJobById(Long id);
 
     boolean deleteJobById(Long id);
 

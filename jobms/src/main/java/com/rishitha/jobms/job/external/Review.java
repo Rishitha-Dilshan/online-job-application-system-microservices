@@ -1,12 +1,10 @@
 package com.rishitha.jobms.job.external;
 
-public class Company {
-
+public class Review {
     private Long id;
-    private String name;
+    private String title;
     private String description;
-
-    private Review review;
+    private double rating;
 
     public Long getId() {
         return id;
@@ -16,12 +14,12 @@ public class Company {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
@@ -32,11 +30,11 @@ public class Company {
         this.description = description;
     }
 
-    public Review getReview() {
-        return review;
+    public double getRating() {
+        return rating;
     }
 
-    public void setReview(Review review) {
-        this.review = review;
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 }
